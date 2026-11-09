@@ -5,6 +5,28 @@
 @media(max-width:700px){.floating-dock{display:none}.floating-dock-mobile{position:fixed;z-index:70;right:16px;bottom:18px;display:flex;flex-direction:column-reverse;align-items:center;gap:9px}.floating-dock-mobile>button,.floating-dock-mobile nav a{width:44px;height:44px;display:grid;place-items:center;border:1px solid #b6ded533;border-radius:50%;background:#111a1df2;color:#b8d9d0;box-shadow:0 8px 28px #0007}.floating-dock-mobile>button svg{width:20px}.floating-dock-mobile nav{display:grid;gap:8px}.floating-dock-mobile nav a svg{width:18px}.expandable-project{grid-template-columns:32px minmax(0,1fr);gap:12px;padding:18px 8px}.expandable-cta{grid-column:2}.expandable-info small{font-size:8px}.project-hover-image{display:none}.expand-copy{align-items:flex-start;flex-direction:column}.macbook-scroll{min-height:650px}.macbook-scene{transform:scale(.66);transform-origin:top center}.devflow-macbook{margin-left:-12px;margin-right:-12px}}
 @media(prefers-reduced-motion:reduce){.expandable-project,.expandable-project:hover{transition:none}.project-hover-image{display:none}.floating-dock,.floating-dock-mobile{scroll-behavior:auto}}
 
+/* Shared deep rose treatment for reusable project and dock components. */
+.expandable-project,.expandable-project:last-child{border-color:#e0a0b433;color:#fff5f7}
+.expandable-project:hover{background:linear-gradient(95deg,#c66c8a1d,transparent 75%)}
+.expandable-number{color:#d9a0b2}
+.expandable-info small{color:#c1aab1}
+.expandable-cta{color:#e0a0b4}
+.project-hover-image{border-color:#e0a0b455}
+.expand-modal{border-color:#e0a0b455;background:#26131b;color:#fff5f7}
+.expand-close{border-color:#e0a0b433;background:#190d12;color:#fff5f7}
+.expand-visual{background:radial-gradient(ellipse at 72% 0,#c66c8a36,transparent 59%),linear-gradient(140deg,#442033,#211018)}
+.expand-visual>span,.expand-visual>small,.expand-content>b{color:#d9b8c3}
+.expand-copy p,.expand-content p{color:#c1aab1}
+.expand-copy>a,.expand-content>a{color:#e0a0b4}
+.expand-content>div span{border-color:#e0a0b433;color:#e5cbd4}
+.floating-dock{border-color:#e0a0b433;background:#26131bf2}
+.floating-dock>a>span{border-color:#e0a0b422;background:#4a2636;color:#f0c8d5}
+.floating-dock small{border-color:#e0a0b433;background:#26131b;color:#fff5f7}
+.floating-dock-mobile>button,.floating-dock-mobile nav a{border-color:#e0a0b455;background:#26131bf2;color:#f0c8d5}
+.career-showcase{background:radial-gradient(ellipse at 50% 25%,#7e294644,transparent 53%),linear-gradient(145deg,#190d12,#2a1420);border-color:#e0a0b422}
+.career-showcase-head{color:#d0bdc3}
+.career-showcase-head b,.career-showcase .macbook-scroll h2 em{color:#e0a0b4}
+
 /* Homepage career feature: keep the portfolio snapshot large enough to read. */
 .career-showcase{position:relative;overflow:hidden;padding:52px 5vw 80px;background:radial-gradient(ellipse at 50% 25%,#15413c55,transparent 52%),linear-gradient(145deg,#091117,#0b151b);border-top:1px solid #9ee8d51b;border-bottom:1px solid #9ee8d51b}.career-showcase-head{max-width:1100px;margin:0 auto 12px;display:flex;justify-content:space-between;gap:20px;color:#9bb3ac;font:11px var(--mono);letter-spacing:.1em}.career-showcase-head b{color:#7edfc9;font:inherit}.career-showcase .macbook-scroll{min-height:940px;padding-top:38px;overflow:visible}.career-showcase .macbook-scroll h2{margin-bottom:55px;font-size:clamp(32px,4vw,52px)}.career-showcase .macbook-scene{width:min(940px,94vw);transform:none}.career-showcase .macbook-lid{height:490px}.career-showcase .macbook-rear{position:absolute;inset:0 0 auto;height:470px;border:2px solid #383d3f;border-radius:22px 22px 9px 9px;background:linear-gradient(145deg,#191c1e,#050607);box-shadow:0 0 0 1px #ffffff19,inset 0 0 0 2px #000;transform:rotateX(-5deg);transform-origin:bottom}.career-showcase .macbook-moving-screen{position:absolute;inset:0 auto auto 0;width:100%;height:470px;padding:14px;border:2px solid #3b4042;border-radius:22px 22px 9px 9px;background:linear-gradient(145deg,#191c1e,#050607);box-shadow:inset 0 0 0 2px #000;backface-visibility:hidden}.career-showcase .macbook-screen{position:relative;width:100%;height:100%;overflow:hidden;border-radius:9px;background:#0d151c}.career-showcase .macbook-screen img{display:block;width:100%;height:100%;object-fit:cover;opacity:1;filter:none}.career-showcase .camera-dot{z-index:2;top:4px;left:50%;width:5px;height:5px;background:#29343b}.career-showcase .macbook-base{height:155px;margin-top:-20px;padding:9px 20px 14px;border-radius:6px 6px 24px 24px}.career-showcase .keyboard-layout{height:68px}.career-showcase .mac-trackpad{height:42px;margin-top:9px}.career-showcase .macbook-scroll h2 em{color:#8ee2d2}
 .globe-stage .globe-fallback{position:absolute;z-index:0;top:50%;left:50%;width:min(68%,370px);aspect-ratio:1;overflow:hidden;border-radius:50%;transform:translate(-50%,-53%);background:radial-gradient(circle at 30% 30%,#1f6973,#082b42 73%);box-shadow:inset -24px -20px 45px #020c1677,0 0 60px #42d8c333}.globe-stage .globe-fallback img{width:100%;height:100%;object-fit:cover;border-radius:50%;opacity:.9;filter:saturate(.85);animation:globe-drift 34s linear infinite}.globe-stage canvas{position:absolute;z-index:1;inset:0}.globe-stage .globe-pin,.globe-stage .globe-hint{z-index:2}@keyframes globe-drift{to{transform:rotate(360deg)}}
@@ -14,3 +36,59 @@
 .expandable-number,.expandable-cta,.expand-content>b,.expand-copy>a,.expand-content>a,.expand-visual>span,.expand-visual>small{font-size:10px}.project-hover-image{width:280px;height:185px;border-radius:14px}
 @media(max-width:740px){.career-showcase{padding:35px 3vw 55px}.career-showcase-head{font-size:9px}.career-showcase-head b{max-width:45%;text-align:right}.career-showcase .macbook-scroll{min-height:690px;padding-top:25px}.career-showcase .macbook-scroll h2{font-size:30px;margin-bottom:40px}.career-showcase .macbook-scene{width:94vw;transform:scale(.75);transform-origin:top center}.career-showcase .macbook-lid{height:380px}.career-showcase .macbook-rear,.career-showcase .macbook-moving-screen{height:365px}.career-showcase .macbook-base{margin-top:-26px}.globe-stage .globe-fallback{width:min(78%,300px)}}
 @media(max-width:480px){.career-showcase .macbook-scroll{min-height:560px}.career-showcase .macbook-scroll h2{font-size:25px}.career-showcase .macbook-scene{transform:scale(.53);transform-origin:top left;width:175vw;margin-left:2vw}.career-showcase .macbook-lid{height:285px}.career-showcase .macbook-rear,.career-showcase .macbook-moving-screen{height:270px}.career-showcase .macbook-base{height:115px}.career-showcase .keyboard-layout{height:53px}.career-showcase .mac-trackpad{height:29px}.career-showcase .macbook-scroll{min-height:440px}.career-showcase-head{font-size:8px}.project-hover-image{display:none}}
+
+/* Palette overrides for the career screen, globe frame, and project mockups. */
+.career-showcase{background:radial-gradient(ellipse at 50% 25%,#7e294644,transparent 53%),linear-gradient(145deg,#190d12,#2a1420)!important;border-top-color:#e0a0b422;border-bottom-color:#e0a0b422}
+.career-showcase-head{color:#d0bdc3}
+.career-showcase-head b,.career-showcase .macbook-scroll h2 em{color:#e0a0b4}
+.globe-stage{background:radial-gradient(ellipse at 45% 52%,#61243e70,transparent 64%);}
+.globe-stage .globe-fallback{background:radial-gradient(circle at 30% 30%,#763c56,#26131b 73%);box-shadow:inset -24px -20px 45px #020c1677,0 0 60px #c66c8a44}
+.globe-stage .globe-pin{border-color:#e0a0b455;background:#28121dbd;color:#f0c8d5}
+.globe-stage .globe-hint{color:#d0aab7}
+.ocean-live{border-color:#e0a0b433;background:radial-gradient(ellipse,#512039,#190d12 70%)}
+.devflow-art{background:radial-gradient(ellipse at 80% 0,#c66c8a26,transparent 55%),#1b0e14}
+.devflow-shell{border-color:#e0a0b433;background:#170b11}
+.devflow-side{color:#c1aab1}
+.devflow-side>b{background:#c66c8a2b;color:#f0c8d5}
+.devflow-side span:first-of-type,.devflow-item em,.devflow-foot{color:#e0a0b4}
+.devflow-toolbar b{color:#fff5f7}
+.devflow-toolbar small,.devflow-item small{color:#b397a1}
+.devflow-item{border-color:#e0a0b422;background:#fff1}
+.devflow-item>i{color:#e0a0b4}
+.devflow-item b{color:#f0dfe5}
+.devflow-item.critical{border-color:#d2789655}
+.devflow-item.critical>i,.devflow-item.critical em{color:#ec96ad}
+.devflow-item.high em{color:#dfb1a2}
+
+/* Reference palette finish for embedded previews and navigation controls. */
+.career-showcase{background:radial-gradient(ellipse at 50% 25%,#c8a49f24,transparent 53%),linear-gradient(145deg,#26090d,#4d0e13)!important;border-color:#d8c4ac33}
+.career-showcase-head{color:#d8c4ac}
+.career-showcase-head b,.career-showcase .macbook-scroll h2 em{color:#c8a49f}
+.globe-stage{background:radial-gradient(ellipse at 45% 52%,#4d0e1370,transparent 64%)}
+.globe-stage .globe-fallback{background:radial-gradient(circle at 30% 30%,#8a5356,#321016 73%);box-shadow:inset -24px -20px 45px #16050877,0 0 60px #c8a49f44}
+.globe-stage .globe-pin{border-color:#d8c4ac66;background:#321016d9;color:#eee4da}
+.globe-stage .globe-hint{color:#d8c4ac}
+.ocean-live{border-color:#d8c4ac44;background:radial-gradient(ellipse,#4d0e13,#26090d 70%)}
+.devflow-art{background:radial-gradient(ellipse at 80% 0,#c8a49f24,transparent 55%),#321016}
+.devflow-shell{border-color:#d8c4ac44;background:#20080c}
+.devflow-side{color:#c8a49f}
+.devflow-side>b{background:#c8a49f33;color:#eee4da}
+.devflow-side span:first-of-type,.devflow-item em,.devflow-foot{color:#d8c4ac}
+.devflow-toolbar b{color:#eee4da}
+.devflow-toolbar small,.devflow-item small{color:#c8a49f}
+.devflow-item{border-color:#d8c4ac33;background:#eee4da08}
+.devflow-item b{color:#eee4da}
+.devflow-item.critical{border-color:#c8a49f66}
+.devflow-item.critical>i,.devflow-item.critical em{color:#c8a49f}
+.devflow-item.high em{color:#d8c4ac}
+.expand-modal{border-color:#d8c4ac66;background:#321016;color:#eee4da}
+.expand-close{border-color:#d8c4ac55;background:#26090d;color:#eee4da}
+.expand-visual{background:radial-gradient(ellipse at 72% 0,#c8a49f33,transparent 59%),linear-gradient(140deg,#4d0e13,#26090d)}
+.expand-visual>span,.expand-visual>small,.expand-content>b,.expand-content>div span{color:#d8c4ac}
+.expand-content>div span{border-color:#d8c4ac55}
+.expand-copy p,.expand-content p{color:#d8c4ac}
+.expand-copy>a,.expand-content>a{color:#c8a49f}
+.floating-dock{border-color:#d8c4ac55;background:#321016f2}
+.floating-dock>a>span{background:#4d0e13;color:#eee4da}
+.floating-dock small{border-color:#d8c4ac55;background:#321016;color:#eee4da}
+.floating-dock-mobile>button,.floating-dock-mobile nav a{border-color:#d8c4ac66;background:#321016f2;color:#eee4da}
