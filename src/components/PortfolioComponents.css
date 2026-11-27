@@ -92,3 +92,62 @@
 .floating-dock>a>span{background:#4d0e13;color:#eee4da}
 .floating-dock small{border-color:#d8c4ac55;background:#321016;color:#eee4da}
 .floating-dock-mobile>button,.floating-dock-mobile nav a{border-color:#d8c4ac66;background:#321016f2;color:#eee4da}
+
+/* ── NEW PROJECT ART PANELS ─────────────────────────────────── */
+
+/* Clarify — finance */
+.clarify-art{height:300px;background:linear-gradient(145deg,#0d1f17,#0a1812);border:1px solid #6ee7b733;padding:42px 22px 18px}
+.clarify-art .art-chip{color:#9fd4b8}
+.clarify-total{margin-top:4px;font:38px var(--sans);letter-spacing:-.08em;color:#e8f7ef}
+.clarify-total small{font-size:15px;color:#7ba98c}
+.clarify-delta{color:#6ee7b7;font:7px var(--mono);margin-top:2px}
+.clarify-heatmap{display:flex;gap:3px;margin-top:14px;height:28px;align-items:flex-end}
+.clarify-heatmap span{flex:1;border-radius:2px;background:#6ee7b7;min-height:4px;height:100%}
+.clarify-row{display:flex;align-items:center;gap:9px;margin-top:8px;font:6px var(--mono);color:#7aaa8f}
+.clarify-row i{height:3px;flex:1;background:#1e3d2a;border-radius:3px}
+.clarify-row i b{display:block;height:100%;background:#6ee7b7;border-radius:3px}
+
+/* ContractGuard — API tooling */
+.contractguard-art{height:300px;background:radial-gradient(ellipse at 80% 10%,#f472b620,transparent 55%),#120d18;border:1px solid #f472b633;padding:38px 18px 15px}
+.contractguard-art .art-chip{color:#d490b8}
+.cg-row{height:40px;display:grid;grid-template-columns:1fr auto;align-items:center;border-bottom:1px solid #ffffff12;font:7px var(--mono);padding:0 4px}
+.cg-row span{color:#c8b8d4}
+.cg-row em{font-style:normal;font-size:6px;padding:4px 7px;border-radius:10px}
+.cg-row.critical em{background:#ff4d6a22;color:#ff7a8a}
+.cg-row.warn em{background:#f4c36a22;color:#f4c36a}
+.cg-row.ok em{background:#6ee7b722;color:#6ee7b7}
+.cg-terminal{margin-top:11px;color:#f472b6;font:7px var(--mono)}
+.cg-terminal i{color:#d5ff75;animation:blink 1s steps(2,end) infinite}
+
+/* Jarvis — voice AI */
+.jarvis-art{height:300px;background:radial-gradient(ellipse at 50% 20%,#a78bfa26,transparent 60%),#0d0d16;border:1px solid #a78bfa33;padding:38px 18px 15px}
+.jarvis-art .art-chip{color:#c4b5fd}
+.jarvis-dot{color:#a78bfa;animation:blink 1.4s steps(2,end) infinite}
+.jarvis-wave{display:flex;align-items:center;gap:3px;height:60px;margin:16px 0 12px}
+.jarvis-wave i{flex:1;background:linear-gradient(#a78bfa,#6d5fd4);border-radius:2px;animation:float-y 1.2s ease-in-out infinite}
+.jarvis-wave i:nth-child(2n){animation-delay:-.3s}
+.jarvis-wave i:nth-child(3n){animation-delay:-.6s;background:linear-gradient(#c4b5fd,#a78bfa)}
+.jarvis-cmd{font:8px var(--mono);color:#c4b5fd}
+.jarvis-cmd span{color:#a78bfa}
+.jarvis-reply{font:7px var(--mono);color:#9089b4;margin-top:5px}
+.jarvis-reply i{color:#d5ff75;animation:blink 1s steps(2,end) infinite}
+.jarvis-tags{display:flex;gap:6px;margin-top:10px}
+.jarvis-tags span{font:6px var(--mono);padding:4px 8px;border:1px solid #a78bfa44;border-radius:20px;color:#b8aee8}
+
+/* Leetcoder — automation */
+.leetcoder-art{height:300px;background:radial-gradient(ellipse at 75% 10%,#fbbf2420,transparent 55%),#121009;border:1px solid #fbbf2433;padding:38px 18px 15px}
+.leetcoder-art .art-chip{color:#d4a94a}
+.lc-stat{margin-top:6px}
+.lc-stat b{font:36px var(--sans);letter-spacing:-.07em;color:#fef3c7}
+.lc-stat small{display:block;font:6px var(--mono);color:#9d8d5a;margin-top:2px}
+.lc-progress{margin-top:12px}
+.lc-bar{height:4px;background:#2a2010;border-radius:3px;margin-bottom:5px}
+.lc-bar b{display:block;height:100%;background:linear-gradient(90deg,#fbbf24,#f59e0b);border-radius:3px}
+.lc-progress span{font:6px var(--mono);color:#9d8d5a}
+.lc-row{display:grid;grid-template-columns:12px 1fr auto;align-items:center;gap:8px;padding:7px 0;border-bottom:1px solid #ffffff0e;font:7px var(--mono);color:#d4c89a}
+.lc-row em{font-style:normal;font-size:6px;color:#fbbf24}
+.lc-row.muted{opacity:.45}
+.lc-row.muted em{color:#9d8d5a}
+.lc-dot{width:7px;height:7px;border-radius:50%;background:#3a3020}
+.lc-dot.accepted{background:#6ee7b7;box-shadow:0 0 6px #6ee7b766}
+.lc-dot.waiting{background:#fbbf24;opacity:.4}
